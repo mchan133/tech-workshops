@@ -49,15 +49,16 @@ print("Nice to meet ya!")
 
 Notice how the input function was used. Also, notice the `str(user_age)`. This is done because `print` can only put together strings, and age is (most likely) an `int`! Don't beleive me? Try putting in a number for your name.
 
+How do you run/wrote these programs? If you are on a Mac or Linux, you can go to the terminal, change your directory to where your program is stored, and type in the command `python your_program.py`. You can write these programs in most text editors, just remember to save it as a `.py` extension!
+
+On Windows, you can write a program in IDLE by going to File, New File. From that editor you can run your program by going to Run, Run Module.
 
 ### B. Loops and Conditionals
 
-Cover if statements, while loops, for loops
-
-An important feature of any language is loops and if/else logic! So to explain how to use them, here's an example:
+An important feature of any language is loops and if/else logic! So to explain how to use them, here's an example of a **while loop**:
 
 ```python
-# Loops, and if/elif/else
+# Loops
 
 print("Here's a question for you: ")
 guess = input("How many lines would it take to write this program in Java? ")
@@ -69,6 +70,36 @@ print("You got it!")
 ```
 
 Some important things to notice here are the colon after the while loop condition, and the indented lines following. The indentations represent the statements within the while loop block, and this helps force more readable code. And though tabs are preferable, any amount of whitespace will do, even a single space (though that would make your code much more difficult to read).
+
+Here is a quick for loop example:
+
+```python
+for i in range(0,10):
+  print(i)
+```
+
+For loops look a little different, because they iterate through a list directly. The range method creates a list (which we will cover soon) of the numbers 0 to 9. But this can work for any list, making for loops very useful.
+
+**Conditional Statements:** The keywords in Python are if, elif, and else. They also terminate with a colon (`:`) and use whitespace for their blocks. This looks something like:
+
+```python
+# Simple guessing game
+
+print("I'm thinking of a number from 1 to 10, can you guess it?")
+while(True):
+  guess = input("Your Guess: ")
+  if type(guess) != int:
+    print("Nope")
+    
+  if guess == 4:
+    print("Correct!")
+    break
+  elif guess > 4:
+    print("Too high.")
+  else:
+    print("Too low.")
+```
+  
 
 ### C. Lists/Arrays and Dicts
 
