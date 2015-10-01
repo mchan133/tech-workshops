@@ -7,8 +7,6 @@ Ravi Bhankharia, Niral Shah
 
 ## Module 0 - What is Python?
 
-Cover what python is, what it's used for (interpreted, dynamically typed scripting language etc)
-
 Python is a powerful, popular, general-purpose programming language.
 
 Some important facts about python:
@@ -20,8 +18,6 @@ Some important facts about python:
 ## Module 1 - Basic Syntax
 
 ### A. Input/Output
-
-Cover how to run a python program, how to print Hello World, how to use raw_input/prompt, how to make a variable
 
 Here's an example of a simple Python Hello World program:
 
